@@ -23,7 +23,6 @@ class App {
  
        var layers = [new ol.layer.Tile({
            source: new ol.source.BingMaps({
-               key: 'AmkKt5jR4zguxo8F5s8wLewdBG-FcB8PDsThiDExAAQkK9ZDkLVb_0M-MUSUp7G9',
                imagerySet: 'Aerial',
                maxZoom: 19,
            })
