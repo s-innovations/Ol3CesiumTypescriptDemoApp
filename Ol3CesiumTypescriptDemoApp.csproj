@@ -1,0 +1,400 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
+  <PropertyGroup>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">$(MSBuildProjectDirectory)\..\</SolutionDir>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">12.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <ProjectGuid>{BC0CAB73-695D-4A0A-AA09-40008C2026B6}</ProjectGuid>
+    <OutputPath>bin</OutputPath>
+    <TypeScriptToolsVersion>1.4</TypeScriptToolsVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <Target Name="Build">
+  </Target>
+  <Target Name="Clean">
+  </Target>
+  <ItemGroup>
+    <TypeScriptCompile Include="src\app\App.ts" />
+    <TypeScriptCompile Include="src\app\AppLoader.ts" />
+    <TypeScriptCompile Include="src\app\OlBorderMoveInteraction.ts" />
+    <TypeScriptCompile Include="src\app\knockout\ol3MapBindingHandler.ts" />
+    <TypeScriptCompile Include="src\app\OlExtensions.ts" />
+    <TypeScriptCompile Include="src\main.ts" />
+    <TypeScriptCompile Include="src\services\LocationService.ts" />
+    <TypeScriptCompile Include="src\vendors.d.ts" />
+    <TypeScriptCompile Include="typings\openlayers\openlayers.d.ts" />
+    <TypeScriptCompile Include="typings\tsd.d.ts" />
+    <TypeScriptCompile Include="typings\TweenMax\TweenMax.d.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="src\assets\" />
+    <Folder Include="src\templates\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=".gitattributes" />
+    <Content Include=".gitignore" />
+    <Content Include="gruntfile.js" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\maki\airfield.png" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\maki\airport.png" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\maki\alcohol-shop.png" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\maki\america-football.png" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\maki\art-gallery.png" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\maki\bakery.png" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\maki\bank.png" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\maki\bar.png" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\maki\baseball.png" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\maki\basketball.png" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\maki\beer.png" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\maki\bicycle.png" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\maki\building.png" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\maki\bus.png" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\maki\cafe.png" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\maki\camera.png" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\maki\campsite.png" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\maki\car.png" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\maki\cemetery.png" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\maki\cesium.png" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\maki\chemist.png" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\maki\cinema.png" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\maki\circle-stroked.png" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\maki\circle.png" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\maki\city.png" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\maki\clothing-store.png" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\maki\college.png" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\maki\commercial.png" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\maki\cricket.png" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\maki\cross.png" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\maki\dam.png" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\maki\danger.png" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\maki\disability.png" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\maki\dog-park.png" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\maki\embassy.png" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\maki\emergency-telephone.png" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\maki\entrance.png" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\maki\farm.png" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\maki\fast-food.png" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\maki\ferry.png" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\maki\fire-station.png" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\maki\fuel.png" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\maki\garden.png" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\maki\gift.png" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\maki\golf.png" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\maki\grocery.png" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\maki\hairdresser.png" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\maki\harbor.png" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\maki\heart.png" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\maki\heliport.png" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\maki\hospital.png" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\maki\ice-cream.png" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\maki\industrial.png" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\maki\land-use.png" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\maki\laundry.png" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\maki\library.png" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\maki\lighthouse.png" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\maki\lodging.png" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\maki\logging.png" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\maki\london-underground.png" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\maki\marker-stroked.png" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\maki\marker.png" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\maki\minefield.png" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\maki\mobilephone.png" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\maki\monument.png" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\maki\museum.png" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\maki\music.png" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\maki\oil-well.png" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\maki\park.png" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\maki\park2.png" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\maki\parking-garage.png" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\maki\parking.png" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\maki\pharmacy.png" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\maki\pitch.png" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\maki\place-of-worship.png" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\maki\playground.png" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\maki\police.png" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\maki\polling-place.png" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\maki\post.png" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\maki\prison.png" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\maki\rail-above.png" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\maki\rail-light.png" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\maki\rail-metro.png" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\maki\rail-underground.png" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\maki\rail.png" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\maki\religious-christian.png" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\maki\religious-jewish.png" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\maki\religious-muslim.png" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\maki\restaurant.png" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\maki\roadblock.png" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\maki\rocket.png" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\maki\school.png" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\maki\scooter.png" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\maki\shop.png" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\maki\skiing.png" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\maki\slaughterhouse.png" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\maki\soccer.png" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\maki\square-stroked.png" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\maki\square.png" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\maki\star-stroked.png" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\maki\star.png" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\maki\suitcase.png" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\maki\swimming.png" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\maki\telephone.png" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\maki\tennis.png" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\maki\theatre.png" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\maki\toilets.png" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\maki\town-hall.png" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\maki\town.png" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\maki\triangle-stroked.png" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\maki\triangle.png" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\maki\village.png" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\maki\warehouse.png" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\maki\waste-basket.png" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\maki\water.png" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\maki\wetland.png" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\maki\zoo.png" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\moonSmall.jpg" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\NaturalEarthII\0\0\0.jpg" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\NaturalEarthII\0\1\0.jpg" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\NaturalEarthII\1\0\0.jpg" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\NaturalEarthII\1\0\1.jpg" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\NaturalEarthII\1\1\0.jpg" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\NaturalEarthII\1\1\1.jpg" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\NaturalEarthII\1\2\0.jpg" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\NaturalEarthII\1\2\1.jpg" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\NaturalEarthII\1\3\0.jpg" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\NaturalEarthII\1\3\1.jpg" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\NaturalEarthII\2\0\0.jpg" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\NaturalEarthII\2\0\1.jpg" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\NaturalEarthII\2\0\2.jpg" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\NaturalEarthII\2\0\3.jpg" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\NaturalEarthII\2\1\0.jpg" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\NaturalEarthII\2\1\1.jpg" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\NaturalEarthII\2\1\2.jpg" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\NaturalEarthII\2\1\3.jpg" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\NaturalEarthII\2\2\0.jpg" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\NaturalEarthII\2\2\1.jpg" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\NaturalEarthII\2\2\2.jpg" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\NaturalEarthII\2\2\3.jpg" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\NaturalEarthII\2\3\0.jpg" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\NaturalEarthII\2\3\1.jpg" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\NaturalEarthII\2\3\2.jpg" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\NaturalEarthII\2\3\3.jpg" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\NaturalEarthII\2\4\0.jpg" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\NaturalEarthII\2\4\1.jpg" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\NaturalEarthII\2\4\2.jpg" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\NaturalEarthII\2\4\3.jpg" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\NaturalEarthII\2\5\0.jpg" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\NaturalEarthII\2\5\1.jpg" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\NaturalEarthII\2\5\2.jpg" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\NaturalEarthII\2\5\3.jpg" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\NaturalEarthII\2\6\0.jpg" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\NaturalEarthII\2\6\1.jpg" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\NaturalEarthII\2\6\2.jpg" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\NaturalEarthII\2\6\3.jpg" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\NaturalEarthII\2\7\0.jpg" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\NaturalEarthII\2\7\1.jpg" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\NaturalEarthII\2\7\2.jpg" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\NaturalEarthII\2\7\3.jpg" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\NaturalEarthII\tilemapresource.xml" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\pin.svg" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\SkyBox\tycho2t3_80_mx.jpg" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\SkyBox\tycho2t3_80_my.jpg" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\SkyBox\tycho2t3_80_mz.jpg" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\SkyBox\tycho2t3_80_px.jpg" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\SkyBox\tycho2t3_80_py.jpg" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\SkyBox\tycho2t3_80_pz.jpg" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\waterNormals.jpg" />
+    <Content Include="libs\cesium\1.9.0\Assets\Textures\waterNormalsSmall.jpg" />
+    <Content Include="libs\cesium\1.9.0\Cesium.js" />
+    <Content Include="libs\cesium\1.9.0\ThirdParty\Workers\deflate.js" />
+    <Content Include="libs\cesium\1.9.0\ThirdParty\Workers\inflate.js" />
+    <Content Include="libs\cesium\1.9.0\Widgets\Animation\Animation.css" />
+    <Content Include="libs\cesium\1.9.0\Widgets\Animation\lighter.css" />
+    <Content Include="libs\cesium\1.9.0\Widgets\BaseLayerPicker\BaseLayerPicker.css" />
+    <Content Include="libs\cesium\1.9.0\Widgets\BaseLayerPicker\lighter.css" />
+    <Content Include="libs\cesium\1.9.0\Widgets\CesiumInspector\CesiumInspector.css" />
+    <Content Include="libs\cesium\1.9.0\Widgets\CesiumWidget\CesiumWidget.css" />
+    <Content Include="libs\cesium\1.9.0\Widgets\CesiumWidget\lighter.css" />
+    <Content Include="libs\cesium\1.9.0\Widgets\FullscreenButton\FullscreenButton.css" />
+    <Content Include="libs\cesium\1.9.0\Widgets\Geocoder\Geocoder.css" />
+    <Content Include="libs\cesium\1.9.0\Widgets\Geocoder\lighter.css" />
+    <Content Include="libs\cesium\1.9.0\Widgets\Images\Cesium_Logo_overlay.png" />
+    <Content Include="libs\cesium\1.9.0\Widgets\Images\ImageryProviders\bingAerial.png" />
+    <Content Include="libs\cesium\1.9.0\Widgets\Images\ImageryProviders\bingAerialLabels.png" />
+    <Content Include="libs\cesium\1.9.0\Widgets\Images\ImageryProviders\bingRoads.png" />
+    <Content Include="libs\cesium\1.9.0\Widgets\Images\ImageryProviders\blackMarble.png" />
+    <Content Include="libs\cesium\1.9.0\Widgets\Images\ImageryProviders\esriNationalGeographic.png" />
+    <Content Include="libs\cesium\1.9.0\Widgets\Images\ImageryProviders\esriWorldImagery.png" />
+    <Content Include="libs\cesium\1.9.0\Widgets\Images\ImageryProviders\esriWorldStreetMap.png" />
+    <Content Include="libs\cesium\1.9.0\Widgets\Images\ImageryProviders\mapQuestOpenStreetMap.png" />
+    <Content Include="libs\cesium\1.9.0\Widgets\Images\ImageryProviders\naturalEarthII.png" />
+    <Content Include="libs\cesium\1.9.0\Widgets\Images\ImageryProviders\openStreetMap.png" />
+    <Content Include="libs\cesium\1.9.0\Widgets\Images\ImageryProviders\stamenToner.png" />
+    <Content Include="libs\cesium\1.9.0\Widgets\Images\ImageryProviders\stamenWatercolor.png" />
+    <Content Include="libs\cesium\1.9.0\Widgets\Images\info-loading.gif" />
+    <Content Include="libs\cesium\1.9.0\Widgets\Images\NavigationHelp\Mouse.svg" />
+    <Content Include="libs\cesium\1.9.0\Widgets\Images\NavigationHelp\MouseLeft.svg" />
+    <Content Include="libs\cesium\1.9.0\Widgets\Images\NavigationHelp\MouseMiddle.svg" />
+    <Content Include="libs\cesium\1.9.0\Widgets\Images\NavigationHelp\MouseRight.svg" />
+    <Content Include="libs\cesium\1.9.0\Widgets\Images\NavigationHelp\Touch.svg" />
+    <Content Include="libs\cesium\1.9.0\Widgets\Images\NavigationHelp\TouchDrag.svg" />
+    <Content Include="libs\cesium\1.9.0\Widgets\Images\NavigationHelp\TouchRotate.svg" />
+    <Content Include="libs\cesium\1.9.0\Widgets\Images\NavigationHelp\TouchTilt.svg" />
+    <Content Include="libs\cesium\1.9.0\Widgets\Images\NavigationHelp\TouchZoom.svg" />
+    <Content Include="libs\cesium\1.9.0\Widgets\Images\TerrainProviders\Ellipsoid.png" />
+    <Content Include="libs\cesium\1.9.0\Widgets\Images\TerrainProviders\STK.png" />
+    <Content Include="libs\cesium\1.9.0\Widgets\Images\TimelineIcons.png" />
+    <Content Include="libs\cesium\1.9.0\Widgets\InfoBox\InfoBox.css" />
+    <Content Include="libs\cesium\1.9.0\Widgets\InfoBox\InfoBoxDescription.css" />
+    <Content Include="libs\cesium\1.9.0\Widgets\lighter.css" />
+    <Content Include="libs\cesium\1.9.0\Widgets\lighterShared.css" />
+    <Content Include="libs\cesium\1.9.0\Widgets\NavigationHelpButton\lighter.css" />
+    <Content Include="libs\cesium\1.9.0\Widgets\NavigationHelpButton\NavigationHelpButton.css" />
+    <Content Include="libs\cesium\1.9.0\Widgets\PerformanceWatchdog\PerformanceWatchdog.css" />
+    <Content Include="libs\cesium\1.9.0\Widgets\SceneModePicker\SceneModePicker.css" />
+    <Content Include="libs\cesium\1.9.0\Widgets\SelectionIndicator\SelectionIndicator.css" />
+    <Content Include="libs\cesium\1.9.0\Widgets\shared.css" />
+    <Content Include="libs\cesium\1.9.0\Widgets\Timeline\lighter.css" />
+    <Content Include="libs\cesium\1.9.0\Widgets\Timeline\Timeline.css" />
+    <Content Include="libs\cesium\1.9.0\Widgets\Viewer\Viewer.css" />
+    <Content Include="libs\cesium\1.9.0\Widgets\widgets.css" />
+    <Content Include="libs\cesium\1.9.0\Workers\cesiumWorkerBootstrapper.js" />
+    <Content Include="libs\cesium\1.9.0\Workers\combineGeometry.js" />
+    <Content Include="libs\cesium\1.9.0\Workers\createBoxGeometry.js" />
+    <Content Include="libs\cesium\1.9.0\Workers\createBoxOutlineGeometry.js" />
+    <Content Include="libs\cesium\1.9.0\Workers\createCircleGeometry.js" />
+    <Content Include="libs\cesium\1.9.0\Workers\createCircleOutlineGeometry.js" />
+    <Content Include="libs\cesium\1.9.0\Workers\createCorridorGeometry.js" />
+    <Content Include="libs\cesium\1.9.0\Workers\createCorridorOutlineGeometry.js" />
+    <Content Include="libs\cesium\1.9.0\Workers\createCylinderGeometry.js" />
+    <Content Include="libs\cesium\1.9.0\Workers\createCylinderOutlineGeometry.js" />
+    <Content Include="libs\cesium\1.9.0\Workers\createEllipseGeometry.js" />
+    <Content Include="libs\cesium\1.9.0\Workers\createEllipseOutlineGeometry.js" />
+    <Content Include="libs\cesium\1.9.0\Workers\createEllipsoidGeometry.js" />
+    <Content Include="libs\cesium\1.9.0\Workers\createEllipsoidOutlineGeometry.js" />
+    <Content Include="libs\cesium\1.9.0\Workers\createGeometry.js" />
+    <Content Include="libs\cesium\1.9.0\Workers\createPolygonGeometry.js" />
+    <Content Include="libs\cesium\1.9.0\Workers\createPolygonOutlineGeometry.js" />
+    <Content Include="libs\cesium\1.9.0\Workers\createPolylineGeometry.js" />
+    <Content Include="libs\cesium\1.9.0\Workers\createPolylineVolumeGeometry.js" />
+    <Content Include="libs\cesium\1.9.0\Workers\createPolylineVolumeOutlineGeometry.js" />
+    <Content Include="libs\cesium\1.9.0\Workers\createRectangleGeometry.js" />
+    <Content Include="libs\cesium\1.9.0\Workers\createRectangleOutlineGeometry.js" />
+    <Content Include="libs\cesium\1.9.0\Workers\createSimplePolylineGeometry.js" />
+    <Content Include="libs\cesium\1.9.0\Workers\createSphereGeometry.js" />
+    <Content Include="libs\cesium\1.9.0\Workers\createSphereOutlineGeometry.js" />
+    <Content Include="libs\cesium\1.9.0\Workers\createVerticesFromHeightmap.js" />
+    <Content Include="libs\cesium\1.9.0\Workers\createVerticesFromQuantizedTerrainMesh.js" />
+    <Content Include="libs\cesium\1.9.0\Workers\createWallGeometry.js" />
+    <Content Include="libs\cesium\1.9.0\Workers\createWallOutlineGeometry.js" />
+    <Content Include="libs\cesium\1.9.0\Workers\sanitizeHtml.js" />
+    <Content Include="libs\cesium\1.9.0\Workers\transferTypedArrayTest.js" />
+    <Content Include="libs\cesium\1.9.0\Workers\upsampleQuantizedTerrainMesh.js" />
+    <Content Include="libs\ol3cesium\1.5.0\ol3cesium-debug.js" />
+    <Content Include="libs\ol3cesium\1.5.0\ol3cesium.js" />
+    <Content Include="libs\ol3\3.5.0\ol-debug.js" />
+    <Content Include="libs\ol3\3.5.0\ol.css" />
+    <Content Include="libs\ol3\3.5.0\ol.js" />
+    <Content Include="libs\requirejs-template\stringTemplateEngine.js" />
+    <Content Include="libs\requirejs-template\template.js" />
+    <Content Include="package.json" />
+    <Content Include="src\index.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="tsd.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bower.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="libs\cesium\1.9.0\Assets\IAU2006_XYS\IAU2006_XYS_0.json" />
+    <Content Include="libs\cesium\1.9.0\Assets\IAU2006_XYS\IAU2006_XYS_1.json" />
+    <Content Include="libs\cesium\1.9.0\Assets\IAU2006_XYS\IAU2006_XYS_10.json" />
+    <Content Include="libs\cesium\1.9.0\Assets\IAU2006_XYS\IAU2006_XYS_11.json" />
+    <Content Include="libs\cesium\1.9.0\Assets\IAU2006_XYS\IAU2006_XYS_12.json" />
+    <Content Include="libs\cesium\1.9.0\Assets\IAU2006_XYS\IAU2006_XYS_13.json" />
+    <Content Include="libs\cesium\1.9.0\Assets\IAU2006_XYS\IAU2006_XYS_14.json" />
+    <Content Include="libs\cesium\1.9.0\Assets\IAU2006_XYS\IAU2006_XYS_15.json" />
+    <Content Include="libs\cesium\1.9.0\Assets\IAU2006_XYS\IAU2006_XYS_16.json" />
+    <Content Include="libs\cesium\1.9.0\Assets\IAU2006_XYS\IAU2006_XYS_17.json" />
+    <Content Include="libs\cesium\1.9.0\Assets\IAU2006_XYS\IAU2006_XYS_18.json" />
+    <Content Include="libs\cesium\1.9.0\Assets\IAU2006_XYS\IAU2006_XYS_19.json" />
+    <Content Include="libs\cesium\1.9.0\Assets\IAU2006_XYS\IAU2006_XYS_2.json" />
+    <Content Include="libs\cesium\1.9.0\Assets\IAU2006_XYS\IAU2006_XYS_20.json" />
+    <Content Include="libs\cesium\1.9.0\Assets\IAU2006_XYS\IAU2006_XYS_21.json" />
+    <Content Include="libs\cesium\1.9.0\Assets\IAU2006_XYS\IAU2006_XYS_22.json" />
+    <Content Include="libs\cesium\1.9.0\Assets\IAU2006_XYS\IAU2006_XYS_23.json" />
+    <Content Include="libs\cesium\1.9.0\Assets\IAU2006_XYS\IAU2006_XYS_24.json" />
+    <Content Include="libs\cesium\1.9.0\Assets\IAU2006_XYS\IAU2006_XYS_25.json" />
+    <Content Include="libs\cesium\1.9.0\Assets\IAU2006_XYS\IAU2006_XYS_26.json" />
+    <Content Include="libs\cesium\1.9.0\Assets\IAU2006_XYS\IAU2006_XYS_27.json" />
+    <Content Include="libs\cesium\1.9.0\Assets\IAU2006_XYS\IAU2006_XYS_3.json" />
+    <Content Include="libs\cesium\1.9.0\Assets\IAU2006_XYS\IAU2006_XYS_4.json" />
+    <Content Include="libs\cesium\1.9.0\Assets\IAU2006_XYS\IAU2006_XYS_5.json" />
+    <Content Include="libs\cesium\1.9.0\Assets\IAU2006_XYS\IAU2006_XYS_6.json" />
+    <Content Include="libs\cesium\1.9.0\Assets\IAU2006_XYS\IAU2006_XYS_7.json" />
+    <Content Include="libs\cesium\1.9.0\Assets\IAU2006_XYS\IAU2006_XYS_8.json" />
+    <Content Include="libs\cesium\1.9.0\Assets\IAU2006_XYS\IAU2006_XYS_9.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="libs\ol3cesium\1.5.0\CHANGES.md" />
+    <Content Include="libs\ol3cesium\1.5.0\ol3cesium.js.map" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">12.0</VisualStudioVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>Ol3CesiumTypescriptDemoApp</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+    <TypeScriptRemoveComments>false</TypeScriptRemoveComments>
+    <TypeScriptSourceMap>True</TypeScriptSourceMap>
+    <TypeScriptModuleKind>amd</TypeScriptModuleKind>
+    <TypeScriptGeneratesDeclarations>True</TypeScriptGeneratesDeclarations>
+    <TypeScriptOutDir>$(SolutionDir)artifacts\src</TypeScriptOutDir>
+    <TypeScriptSourceRoot>$(SolutionDir)src</TypeScriptSourceRoot>
+    <TypeScriptMapRoot>$(SolutionDir)artifacts\src</TypeScriptMapRoot>
+    <TypeScriptTarget>ES6</TypeScriptTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <TypeScriptRemoveComments>true</TypeScriptRemoveComments>
+    <TypeScriptSourceMap>false</TypeScriptSourceMap>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:25500/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+          <servers defaultServer="">
+            <server name="SelfHostServer" exePath="" cmdArgs="" url="http://localhost:23997/" workingDir="" />
+          </servers>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
