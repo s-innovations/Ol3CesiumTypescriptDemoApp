@@ -9,12 +9,12 @@ https://visualstudiogallery.msdn.microsoft.com/65748cdb-4087-497e-a394-2e3449c8e
 https://visualstudiogallery.msdn.microsoft.com/dcbc5325-79ef-4b72-960e-0a51ee33a0ff?SRC=VSIDE
 
 ## Build Project
-1) Clone this repository
-2) Right click package.json and from the context menu run NPM Install packages
-3) Right click bower.json and from the context menu run Bower Install packages
-4) From the Task Runner Explorer (> View > Other Windows > Task Runner Explorer - if it is not visible) refresh it and run local
-5) Setup IIS or some other host to serve content in /artifacts/local  where the website was generated.
-6) Optional, if you intent to check in the repository to git again inside VS you might run into an issue that some npm packages creates to deep paths, even though these are not commeitted. I use this tool to flatten the dependencies. https://www.npmjs.com/package/flatten-packages
+1. Clone this repository
+2. Right click package.json and from the context menu run NPM Install packages
+3. Right click bower.json and from the context menu run Bower Install packages
+4. From the Task Runner Explorer (> View > Other Windows > Task Runner Explorer - if it is not visible) refresh it and run local
+5. Setup IIS or some other host to serve content in /artifacts/local  where the website was generated.
+6. Optional, if you intent to check in the repository to git again inside VS you might run into an issue that some npm packages creates to deep paths, even though these are not commeitted. I use this tool to flatten the dependencies. https://www.npmjs.com/package/flatten-packages
 
 ## Next steps
 
