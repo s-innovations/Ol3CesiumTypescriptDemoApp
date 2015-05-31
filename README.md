@@ -1,6 +1,8 @@
 # Ol3CesiumTypescriptDemoApp
 A demonstration project for creating a webapp with grunt tools in visual studio, using ol3 cesium and requirejs
 
+https://vimeo.com/129351085
+
 
 ## Visual Studio Extensions
 Using these cool extensions you will get up and running with grunt tools in no time.
